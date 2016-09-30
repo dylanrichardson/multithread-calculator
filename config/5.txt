@@ -1,0 +1,8 @@
+A 0 1 = 0 2 %
+B 0 2 = 2
+C 0 1 A = V I * V / 2 %
+D 0 2 A B = V I * V / 2 %
+E 0 3 B = V I * V / 2 %
+F 0 1 C = V I * V / 2 %
+G 0 2 E = V I * V / 2 %
+H 0 1 D F G = V I * V / 2 %

@@ -1,0 +1,8 @@
+A 0 1 = 1
+B 0 2 = 2
+C 0 1 A B = V I * V /
+D 0 2 A B = V I * V /
+E 0 3 A B = V I * V /
+F 0 1 C D E = V I * V /
+G 0 2 C D E = V I * V /
+H 0 1 F G = V I * V /

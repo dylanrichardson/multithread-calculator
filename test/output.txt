@@ -1,0 +1,120 @@
+Script started on Fri 30 Sep 2016 12:04:21 AM EDT
+drichardson2:proj3 $ test/test.sh 
+Configuration config/1.txt:
+A 1 0
+
+Running with graph/graph:
+Node A computed a value of 1 after 0 seconds.
+Total computation resulted in a value of 1 after 0 seconds.
+
+Running with nblock/nblock:
+Node A computed a value of 1 after 0 seconds.
+Total computation resulted in a value of 1 after 0 seconds.
+
+Configuration config/2.txt:
+A 1 1
+B 2 1 A
+C 3 1 A
+D 4 1 B C
+
+Running with graph/graph:
+Node A computed a value of 1 after 1 second.
+Node B computed a value of 2 after 2 seconds.
+Node C computed a value of 3 after 2 seconds.
+Node D computed a value of 4 after 3 seconds.
+Total computation resulted in a value of 10 after 3 seconds.
+
+Running with nblock/nblock:
+Node A computed a value of 1 after 1 second.
+Node B computed a value of 2 after 2 seconds.
+Node C computed a value of 3 after 2 seconds.
+Node D computed a value of 4 after 3 seconds.
+Total computation resulted in a value of 10 after 3 seconds.
+
+Configuration config/3.txt:
+A 1 1
+B 0 1 A = 23 2 4 * +
+C 0 1 A = V 2 %
+D 0 1 B C = I V +
+
+Running with graph/graph:
+Node A computed a value of 1 after 1 second.
+Node B computed a value of 31 after 2 seconds.
+Node C computed a value of 0 after 2 seconds.
+Node D computed a value of 35 after 3 seconds.
+Total computation resulted in a value of 67 after 3 seconds.
+
+Running with nblock/nblock:
+Node A computed a value of 1 after 1 second.
+Node B computed a value of 31 after 2 seconds.
+Node C computed a value of 0 after 2 seconds.
+Node D computed a value of 35 after 3 seconds.
+Total computation resulted in a value of 67 after 3 seconds.
+
+Configuration config/4.txt:
+A 0 1 = 1
+B 0 2 = 2
+C 0 1 A B = V I * V /
+D 0 2 A B = V I * V /
+E 0 3 A B = V I * V /
+F 0 1 C D E = V I * V /
+G 0 2 C D E = V I * V /
+H 0 1 F G = V I * V /
+
+Running with graph/graph:
+Node A computed a value of 1 after 1 second.
+Node B computed a value of 2 after 2 seconds.
+Node C computed a value of 2 after 3 seconds.
+Node D computed a value of 3 after 4 seconds.
+Node E computed a value of 4 after 5 seconds.
+Node F computed a value of 5 after 6 seconds.
+Node G computed a value of 6 after 7 seconds.
+Node H computed a value of 7 after 8 seconds.
+Total computation resulted in a value of 30 after 8 seconds.
+
+Running with nblock/nblock:
+Node A computed a value of 1 after 1 second.
+Node B computed a value of 2 after 2 seconds.
+Node C computed a value of 2 after 3 seconds.
+Node D computed a value of 3 after 4 seconds.
+Node E computed a value of 4 after 5 seconds.
+Node F computed a value of 5 after 6 seconds.
+Node G computed a value of 6 after 7 seconds.
+Node H computed a value of 7 after 8 seconds.
+Total computation resulted in a value of 30 after 8 seconds.
+
+Configuration config/5.txt:
+A 0 1 = 0 2 %
+B 0 2 = 2
+C 0 1 A = V I * V / 2 %
+D 0 2 A B = V I * V / 2 %
+E 0 3 B = V I * V / 2 %
+F 0 1 C = V I * V / 2 %
+G 0 2 E = V I * V / 2 %
+H 0 1 D F G = V I * V / 2 %
+
+Running with graph/graph:
+Node A computed a value of 0 after 1 second.
+Node B computed a value of 2 after 2 seconds.
+Node C computed a value of 0 after 2 seconds.
+Node F computed a value of 1 after 3 seconds.
+Node D computed a value of 1 after 4 seconds.
+Node E computed a value of 0 after 5 seconds.
+Node G computed a value of 0 after 7 seconds.
+Node H computed a value of 1 after 8 seconds.
+Total computation resulted in a value of 5 after 8 seconds.
+
+Running with nblock/nblock:
+Node A computed a value of 0 after 1 second.
+Node B computed a value of 2 after 2 seconds.
+Node C computed a value of 0 after 2 seconds.
+Node F computed a value of 1 after 3 seconds.
+Node D computed a value of 1 after 4 seconds.
+Node E computed a value of 0 after 5 seconds.
+Node G computed a value of 0 after 7 seconds.
+Node H computed a value of 1 after 8 seconds.
+Total computation resulted in a value of 5 after 8 seconds.
+
+drichardson2:proj3 $ exit
+
+Script done on Fri 30 Sep 2016 12:12:17 AM EDT
