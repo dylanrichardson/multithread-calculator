@@ -6,6 +6,7 @@
 #include <vector>
 #include <stdio.h>
 #include <stdlib.h>
+#include <algorithm>
 #include "scheduler.hpp"
 #include "node.hpp"
 
