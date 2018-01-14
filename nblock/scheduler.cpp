@@ -10,6 +10,8 @@
 #include <sstream>
 #include <pthread.h>
 #include <semaphore.h>
+#include <sys/types.h>
+#include <unistd.h>
 
 using namespace std;
 
